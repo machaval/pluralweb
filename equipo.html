@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plural Design</title>
+    <style>
+        body {
+
+            padding: 0;
+            height: 100%;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        }
+
+        #container {
+            width: 100%;
+            display: table;
+            text-align: center;
+
+        }
+
+        #header {
+            padding-top: 35px;
+            padding-bottom: 15px;
+        }
+
+            /* Horizontal Menu */
+        #menu {
+            border-top: solid lightgrey thin;
+
+            width: 100%;
+
+            display: table-row-group;
+            text-align: center;
+            vertical-align: middle;
+
+        }
+
+        #content {
+
+            margin-top: 2px;
+            padding-bottom: 0;
+            height: 100%;
+            padding-top: 2px;
+            border: solid lightgrey thin;
+        }
+
+        ul#navlist {
+            display: table-cell;
+            height: 40px;
+            white-space: nowrap;
+            padding-top: 0;
+            padding-left: 0;
+            margin-top: 0;
+            vertical-align: middle;
+            text-align: center;
+            color: #808284;
+            border-top: solid lightgrey thin;
+            border-bottom: solid lightgrey thin;
+
+        }
+
+        .link{
+            color: #00B4BD;
+            text-decoration: none;
+        }
+
+        #navlist li {
+            display: inline;
+            list-style-type: none;
+            padding: 0 0;
+        }
+
+        #navlist a {
+            padding: 5px 30px;
+
+            font-style: normal;
+            font-size: 10pt;
+
+            color: #808284;
+        }
+
+        #navlist a:link, #navlist a:visited {
+            text-decoration: none;
+
+        }
+
+        #navlist a:hover {
+            text-decoration: none;
+            color: #00B4BD;
+        }
+
+        #navlist .selected {
+            color: #00B4BD;
+        }
+
+        #team {
+            display: table;
+            width: 100%;
+            padding-bottom: 0;
+            padding-top: 64px;
+
+
+        }
+
+        .member {
+
+            text-align: center;
+            display: table-cell;
+            padding-left: 30px;
+        }
+
+        h4 {
+            color: #00B4BD;
+            font-size: 14pt;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            margin-top: 0;
+            font-style: normal;
+            font-variant: normal;
+        }
+
+        h5 {
+            color: #ebbb1e;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            margin-top: 0;
+        }
+
+        #team-content {
+            display: table-row;
+            text-align: center;
+        }
+
+        .member {
+            width: 100px;
+
+        }
+
+        p {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .span4 {
+            display: block;
+            float: left;
+            padding-right: 30px;
+        }
+
+        .thumbnails {
+            display: block;
+        }
+        #paula{
+            padding-left: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div id="header">
+        <img src="img/header.png">
+    </div>
+    <div id="menu">
+        <ul id="navlist">
+            <li><a class="selected" href="/">EQUIPO</a></li>
+            <li><a href="/chinese-tools">SERVICIOS</a></li>
+            <li><a href="/archives">CLIENTES</a></li>
+            <li><a href="/chinese-tools">TRABAJOS</a></li>
+            <li><a href="/chinese-tools">CONTACTO</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="team">
+            <div id="team-content">
+
+                <ul class="thumbnails">
+                    <li class="span4">
+                        <div class="legend">
+                            <img src="img/legend.png"/>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <div id="paula" class="member">
+                            <img width="150" src="img/0407209.jpg"/>
+                            <h4>Paula de Estrada</h4>
+                            <h5>Dise&ntilde;adora Gr&aacute;fica</h5>
+
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <a class="link" href="http://www.linkedin.com/profile/view?id=49746491&locale=en_US&trk=tyah">cv</a>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <div class="member">
+                            <img width="150" src="img/1f636c0.jpeg"/>
+                            <h4>Chantal</h4>
+                            <h5>Dise&ntilde;adora Gr&aacute;fica</h5>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <a class="link" href="http://www.linkedin.com/profile/view?id=49746491&locale=en_US&trk=tyah">cv</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
