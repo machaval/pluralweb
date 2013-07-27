@@ -55,7 +55,7 @@ body {
 
 
     padding-bottom: 0;
-    height: 100%;
+    height: 454px;
 
     border-bottom: solid lightgrey thin;
     border-left: solid lightgrey thin;
@@ -129,7 +129,7 @@ ul#navlist {
     display: table-cell;
     width: 100px;
     padding: 0;
-
+    margin: 0;
 }
 
 h4 {
@@ -156,11 +156,7 @@ h5 {
     text-align: left;
 }
 
-.member {
 
-    padding: 0;
-    margin: 0;
-}
 
 p {
     font-size: 11px;
@@ -187,4 +183,43 @@ p {
 
     vertical-align: middle;
     padding-right: 20px;
+}
+
+.item {
+    color: #58585B;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-weight: 100;
+    text-align: left;
+    list-style-type: none;
+    font-size: 13px;
+    white-space: nowrap;
+    padding-bottom: 9px;
+}
+
+.itemcontainer {
+    display: inline-table;
+
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+#servicios_text {
+    display: table-cell;
+    text-align: right;
+    padding-left: 20px;
+}
+
+#servicios {
+    display: table-cell;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#servicios_title {
+    padding-bottom: 20px;
+    display: block;
+    padding-left: 30px;
+    text-align: left;
+
 }
