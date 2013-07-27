@@ -209,6 +209,7 @@ p {
 #servicios {
     display: table-cell;
     padding: 0;
+    padding-top: 40px;
     vertical-align: middle;
     text-align: center;
 }
