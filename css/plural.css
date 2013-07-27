@@ -19,7 +19,8 @@ body {
     display: table;
     text-align: center;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 20px    ;
 }
 
 .description{
@@ -45,16 +46,17 @@ body {
 
 }
 #divisor{
-    background: url("../img/border.png") round center;
-    height: 4px;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
 }
 
 #content {
 
-    margin-top: 2px;
+
     padding-bottom: 0;
     height: 100%;
-    padding-top: 2px;
+
     border-bottom: solid lightgrey thin;
     border-left: solid lightgrey thin;
     border-right: solid lightgrey thin;
@@ -62,9 +64,9 @@ body {
 
 ul#navlist {
     display: table-cell;
-    height: 40px;
+
     white-space: nowrap;
-    padding-top: 0;
+    padding-top: 15px;
     padding-left: 0;
     margin-top: 0;
     vertical-align: middle;
@@ -132,23 +134,26 @@ ul#navlist {
 
 h4 {
     color: #00B4BD;
-    font-size: 11pt;
+    font-size: 10pt;
     margin-bottom: 0;
+    padding-top: 5px;
     padding-bottom: 0;
     margin-top: 0;
     font-style: normal;
     font-variant: normal;
     font-weight: 100;
+    text-align: left;
 }
 
 h5 {
     color: #ebbb1e;
     margin-bottom: 0;
-    font-size: 10pt;
+    font-size: 9pt;
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 100;
+    text-align: left;
 }
 
 .member {
@@ -161,6 +166,7 @@ p {
     font-size: 11px;
     font-weight: 100;
     text-align: left;
+    color: #808284;
 }
 
 .span4 {
@@ -174,9 +180,11 @@ p {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    padding-left: 0;
 }
 
 #legend {
 
     vertical-align: middle;
+    padding-right: 20px;
 }
