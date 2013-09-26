@@ -1,0 +1,64 @@
+#contacto-caja {
+    padding: 30px 100px;
+    width: 600px;
+}
+
+#contacto-caja .derecha {
+    padding: 0px;
+    width: 237px;
+    font-size: 12px;
+    float: left;
+}
+
+#contacto-caja .izquierda {
+    width: 343px;
+    padding-left: 20px;
+    float:left;
+    color: #0099A8;
+}
+
+#formulario-caja {
+    width:415px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.field-form {
+    background-color:#eeeeee;
+    border:1px solid #C9C9CB;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    margin-top:5px;
+    margin-bottom:5px;
+    font-size: 12px;
+    width: 335px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.field-form-2 {
+    background-color:#EEEEEF;
+    border:1px solid #C9C9CB;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    margin-top:5px;
+    margin-bottom:5px;
+    font-size: 12px;
+    width: 335px;
+    height: 100px;
+    line-height: 25px;
+}
+
+
+
+#contacto-caja a {
+    font-style: normal;
+    color: #808284;
+}
+
+#contacto-caja a:link, #contacto-caja a:visited {
+    text-decoration: none;
+}
+
+#contacto-caja a:hover {
+    text-decoration: none;
+    color: #00B4BD;
+}

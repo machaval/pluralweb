@@ -9,18 +9,19 @@ body {
 }
 
 #container {
-
     display: table;
     text-align: center;
     margin: 0 auto;
+    width: 800px;
+    padding-bottom: 30px;
 }
 
 #footer {
     display: table;
     text-align: center;
     width: 100%;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .description {
@@ -57,6 +58,13 @@ body {
     padding-bottom: 0;
     height: 454px;
 
+    border-bottom: solid lightgrey thin;
+    border-left: solid lightgrey thin;
+    border-right: solid lightgrey thin;
+}
+
+#content-trabajos {
+    padding-bottom: 20px;
     border-bottom: solid lightgrey thin;
     border-left: solid lightgrey thin;
     border-right: solid lightgrey thin;
@@ -117,9 +125,18 @@ ul#navlist {
 
 #main {
     display: table;
-    width: 100%;
+    width: 798px;
     padding: 20px 0 0;
+    color: #808284;
 
+}
+
+#main .titulo{
+    width:672px;
+    margin:0px;
+    text-align: left;
+    float: left;
+    padding: 0px 63px;
 }
 
 .member {
@@ -159,7 +176,7 @@ p {
     font-size: 11px;
     font-weight: 100;
     text-align: left;
-    color: #808284;
+
 }
 
 .span4 {
@@ -174,6 +191,7 @@ p {
     vertical-align: middle;
     text-align: center;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 #legend {
@@ -241,4 +259,12 @@ p {
     padding-right: 0px;
     padding-top: 0;
     padding-bottom: 10px;
+}
+
+.trabajo {
+
+    border-top: solid lightgrey thin;
+    border-bottom: solid lightgrey thin;
+    border-left: solid lightgrey thin;
+    border-right: solid lightgrey thin;
 }

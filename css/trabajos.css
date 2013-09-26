@@ -1,0 +1,213 @@
+#catalogo-bx {
+    padding: 30px 62px;
+    width: 672px;
+    height: 320px;
+    position: relative;
+}
+
+#catalogo-bx a {
+    color: #008BD0;
+}
+
+#catalogo-bx img {
+    float: left;
+    width: 507px;
+}
+
+#catalogo-bx p {
+    width: 155px;
+    position: absolute;
+    left: 517px;
+    font-size: 11px;
+    margin: 0px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+}
+
+.descripcion-anteojo {
+    color: #000000;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+div.jMyCarousel {
+    margin-top: 0px;
+    height: 128px !important;
+    background-color: #FFFFFF;
+    float: left;
+}
+
+div.jMyCarousel .prev {
+    background: url('../img/boton-menos.jpg') left center no-repeat;
+    width: 14px;
+    height: 35px;
+    border: 0px;
+    background-color: #FFFFFF;
+}
+
+div.jMyCarousel .next {
+    background: url('../img/boton-mas.jpg') right center no-repeat;
+    width: 14px;
+    height: 35px;
+    border: 0px;
+    background-color: #FFFFFF;
+}
+
+div.jMyCarousel ul li {
+    margin: 0px;
+    line-height: 0px;
+    padding: 5px;
+    width: 107px;
+    height: 128px;
+    text-align: center;
+
+}
+
+div.jMyCarousel ul li a {
+    border: 0px;
+}
+
+div.jMyCarousel ul li img {
+    display: block;
+    border: 0px;
+    margin: 0px 0px 0px;
+}
+
+/*                             SLIDER */
+
+.jcarousel-skin-tango .jcarousel-container {
+    height: 128px;
+    margin-top: 20px;
+}
+
+.jcarousel-skin-tango .jcarousel-container img {
+    border: 0px;
+}
+
+/*----------------------------------------------------------------------------                 ------------*/
+
+.jcarousel-skin-tango li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 112px;
+    height: 128px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.jcarousel-skin-tango li a {
+    display: block;
+    height: 128px;
+    border: 0px;
+    text-decoration: none;
+    color: #808284;
+}
+
+a.aqui {
+    background-image: url(../img/bk-item.jpg);
+    color: #FFF;
+    background-position: 0 0;
+}
+
+/*----------------------------------------------------------------------------                 ------------*/
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+    direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 672px;
+    padding: 0px 0px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width: 672px;
+    height: 128px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 107px;
+    height: 128px;
+}
+
+.jcarousel-skin-tango .jcarousel-item p {
+    margin: 0px;
+    padding: 5px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+/*----------------------------------------------------------------------------                 ------------*/
+
+/*----------------------------------------------------------------------------                 ------------*/
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+    margin-left: 0px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    position: absolute;
+    top: 25px;
+    right: -25px;
+    width: 18px;
+    height: 35px;
+    cursor: pointer;
+    background: transparent url('../img/boton-mas.jpg') no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url(prev-horizontal.png);
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 15px;
+    height: 35px;
+    cursor: pointer;
+    background: transparent url('../img/boton-menos.jpg') no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(next-horizontal.png);
+}
+
+/* -------------------------------- item */
+
+#trabajo {
+    width: 672;
+
+}
+
+#trabajo .foto {
+    width: 507;
+    height: 320;
+    border: solid lightgrey thin;
+    background-color: #CCC;
+    float: left;
+
+}

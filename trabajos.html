@@ -3,32 +3,333 @@
 <head>
     <title>Plural Design</title>
     <link rel="stylesheet" type="text/css" href="css/plural.css"/>
+    <link rel="stylesheet" type="text/css" href="css/trabajos.css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#mycarousel').jcarousel({
+                wrap: 'last',
+                scroll: 1
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () { // Script de la Galeria
+            $('#catalogo-bx').find('div').css('position', 'absolute').not(':first').hide();
+            $('#catalogo-bx').find('div:first').addClass('aqui');
+            $('#mycarousel').find('a:first').addClass('aqui').css('background-position', '0px 0px').css('color', '#fff');
+            $('#mycarousel').find('a').click(function () {
+                $('#catalogo-bx').find('div.aqui').fadeOut(400);
+                $('#catalogo-bx').find('div').removeClass('aqui').filter(this.hash).fadeIn(400).addClass('aqui');
+                $(this).css('background-position', '0px 0px').css('color', '#fff');
+
+
+                $('#mycarousel').find('a').removeClass('aqui');
+                $('#mycarousel').find('a').css('background-position', '0px 0px').css('color', '#808284');
+                $(this).addClass('aqui');
+                $(this).css('background-position', '0px 0px').css('color', '#fff');
+
+                return false;
+            });
+            $('#mycarousel').find('a').hover(
+                    function () { //mouse over
+                        $(this).css('', '').css('background-position', '0px');
+
+                    },
+                    function () { //mouse out
+                        $(this).css('background-position', '0px 128px').css('color', '#808284');
+
+                        $('#mycarousel').find('a.aqui').css('background-position', '0px 0px').css('color', '#fff');
+
+                    });
+            $('#catalogo-bx').find('a').click(function () {
+                $('#catalogo-bx').find('div.aqui').fadeOut(400);
+                $('#catalogo-bx').find('div').removeClass('aqui').filter(this.hash).fadeIn(400).addClass('aqui');
+                alert("Click")
+                return false;
+            });
+        });
+    </script>
 </head>
 <body>
 
 <div id="container">
-    <div id="header">
-        <img src="img/header.png">
-    </div>
-    <div id="menu">
-        <ul id="navlist">
-            <li><a href="equipo.html">EQUIPO</a></li>
-            <li><a href="servicios.html">SERVICIOS</a></li>
-            <li><a href="clientes.html">CLIENTES</a></li>
-            <li><a class="selected">TRABAJOS</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
-    </div>
-    <div id="divisor">
-        <img style="vertical-align: bottom" src="img/border.png">
-    </div>
-    <div id="content">
-        <div id="main">
+<div id="header">
+    <img src="img/header.png">
+</div>
+<div id="menu">
+    <ul id="navlist">
+        <li><a href="equipo.html">EQUIPO</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="clientes.html">CLIENTES</a></li>
+        <li><a class="selected">TRABAJOS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+</div>
+<div id="divisor">
+    <img style="vertical-align: bottom" src="img/border.png">
+</div>
+<div id="content-trabajos">
+<div id="main">
+
+<div class="titulo">
+    <img src="img/titulo_trabajos.png" border="0" alt="Trabajos"/>
+</div>
+
+<div style="width:672px; padding: 0 63px;">
+    <ul id="mycarousel" class="jcarousel-skin-tango">
+        <li>
+            <a href="#01">
+                <p>
+                    <img src="img/trabajos/miniaturas/01.png" width="97" height="66" border="0"/>
+                </p>
+
+                <p style="padding:0 5px;">
+                            	<span style="font-size:12px;">
+                            	Kimberly-Clark<br>
+								</span>
+                                <span style="font-size:10px;">
+                                Web de uso interno
+                            	</span>
+                </p>
+            </a>
+
+        </li>
+
+        <li>
+            <a href="#02">
+                <p>
+
+                    <img src="img/trabajos/miniaturas/02.png" width="97" height="66" border="0"/>
+
+                </p>
+
+                <p style="padding:0 5px;">
+                            	<span style="font-size:12px;">
+                            	Kimberly-Clark<br>
+								</span>
+                                <span style="font-size:10px;">
+                                Dise&ntilde;o de cat&aacute;logo
+                            	</span>
+                </p>
+            </a>
+
+        </li>
+
+        <li>
+            <a href="#03">
+                <p>
+
+                    <img src="img/trabajos/miniaturas/03.png" width="97" height="66" border="0"/>
+
+                </p>
+
+                <p style="padding:0 5px;">
+                            	<span style="font-size:12px;">
+                            	Kimberly-Clark<br>
+								</span>
+                                <span style="font-size:10px;">
+                                Clark  Dise&ntilde;o de fichas
+                            	</span>
+                </p>
+            </a>
+
+        </li>
+
+        <li>
+            <a href="#04">
+                <p>
+
+                    <img src="img/trabajos/miniaturas/04.png" width="97" height="66" border="0"/>
+
+                </p>
+
+                <p style="padding:0 5px;">
+                            	<span style="font-size:12px;">
+                            	Kimberly-Clark<br>
+								</span>
+                                <span style="font-size:10px;">
+                                Clark  Diseño de fichas
+                            	</span>
+                </p>
+            </a>
+
+        </li>
+
+        <li>
+            <a href="#05">
+                <p>
+
+                    <img src="img/trabajos/miniaturas/05.png" width="97" height="66" border="0"/>
+
+                </p>
+
+                <p style="padding:0px 5px;">
+                            	<span style="font-size:12px;">
+                            	De punta en blanco<br>
+								</span>
+                                <span style="font-size:10px;">
+                                Identidad
+                            	</span>
+                </p>
+            </a>
+
+        </li>
+
+        <li>
+            <a href="#06">
+                <p>
+
+                    <img src="img/trabajos/miniaturas/06.png" width="97" height="66" border="0"/>
+
+                </p>
+
+                <p style="padding:0px 5px;">
+                            	<span style="font-size:12px;">
+                            	Limay River Lodge<br>
+								</span>
+                                <span style="font-size:10px;">
+                                Identidad
+                            	</span>
+                </p>
+            </a>
+
+        </li>
+
+        <li>
+            <a href="#07">
+                <p>
+
+                    <img src="img/trabajos/miniaturas/07.png" width="97" height="66" border="0"/>
+
+                </p>
+
+                <p style="padding:0px 5px;">
+                            	<span style="font-size:12px;">
+                            	BSO Abogados<br>
+								</span>
+                                <span style="font-size:10px;">
+                                Identidad
+                            	</span>
+                </p>
+            </a>
+
+        </li>
+        <li>
+            <a href="#08">
+                <p>
+
+                    <img src="img/trabajos/miniaturas/08.png" width="97" height="66" border="0"/>
+
+                </p>
+
+                <p style="padding:0 5px;">
+                            	<span style="font-size:11px;">
+                            	Argentina Outfitters<br>
+								</span>
+                                <span  style="width: 100%; text-align: center;font-size:10px;">
+                                Newsletter
+                            	</span>
+                </p>
+            </a>
+
+        </li>
 
 
-        </div>
+    </ul>
+</div>
+
+
+<div id="catalogo-bx">
+
+
+    <div id="01">
+
+        <img class="trabajo" src="img/trabajos/01_web_voyconkc_A.png"/>
+
+        <p>
+            Dise&ntilde;o de marca e imagen para una aplicaci&oacute;n web de uso interno
+        </p>
 
     </div>
+
+
+    <div id="02">
+
+        <img class="trabajo" src="img/trabajos/02_catalogo_A.png"/>
+
+        <p>
+            Dise&ntilde;o de fichas y carpeta para cat&aacute;logo log&iacute;stico
+        </p>
+
+    </div>
+
+    <div id="03">
+
+        <img class="trabajo" src="img/trabajos/03_categorystories_A.jpg"/>
+
+        <p>
+            Dise&ntilde;o de marca e identidad para proyecto interno.
+        </p>
+
+    </div>
+
+    <div id="04">
+
+        <img class="trabajo" src="img/trabajos/04_playbooks_A.png"/>
+
+        <p>
+            Dise&ntilde;o de fichas para cada categor&iacute;a.
+        </p>
+
+    </div>
+
+    <div id="05">
+
+        <img class="trabajo" src="img/trabajos/05_depuntablanco_A.png"/>
+
+        <p>
+            Naming. Dise&ntilde;o de marca e identidad
+        </p>
+
+    </div>
+
+    <div id="06">
+
+        <img class="trabajo" src="img/trabajos/06_limay_A.png"/>
+
+        <p>
+            Dise&ntilde;o de marca e identidad
+        </p>
+
+    </div>
+
+    <div id="07">
+
+        <img class="trabajo" src="img/trabajos/07_BSO_A.png"/>
+
+        <p>
+            Dise&ntilde;o de marca e identidad
+        </p>
+
+    </div>
+    <div id="08">
+
+        <img class="trabajo" src="img/trabajos/08_argentinaout_A.png"/>
+
+        <p>
+            Dise&ntilde;o de newslleter digital
+        </p>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</div>
 
 </div>
 
