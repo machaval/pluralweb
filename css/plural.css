@@ -17,7 +17,7 @@ body {
 }
 
 #footer {
-    display: table;
+    display: inline-table;
     text-align: center;
     width: 100%;
     padding-top: 0px;
@@ -31,6 +31,7 @@ body {
 
 .name {
     text-align: left;
+    color: #00B4BD;
 }
 
 #header {
@@ -140,10 +141,9 @@ ul#navlist {
 }
 
 .member {
-
-    text-align: center;
+    text-align: left;
     display: table-cell;
-    width: 100px;
+    width: 145px;
     padding: 0;
     margin: 0;
 }
@@ -162,7 +162,6 @@ h4 {
 }
 
 h5 {
-    color: #ebbb1e;
     margin-bottom: 0;
     font-size: 9pt;
     padding-bottom: 0;
@@ -183,7 +182,6 @@ p {
     display: inline-table;
     padding-right: 30px;
     padding-top: 0;
-    padding-bottom: 10px;
 }
 
 .thumbnails {
