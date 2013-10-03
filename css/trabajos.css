@@ -14,12 +14,8 @@
     width: 507px;
 }
 
-#catalogo-bx p {
-    width: 155px;
-    position: absolute;
-    left: 517px;
-    font-size: 11px;
-    margin: 0px;
+.trabajo-description {
+
     border-bottom: 1px solid lightgrey;
     padding-bottom: 10px;
 }
@@ -82,7 +78,10 @@ div.jMyCarousel ul li img {
 }
 
 .jcarousel-skin-tango .jcarousel-container img {
-    border: 0px;
+    border-top: solid lightgrey thin;
+    border-bottom: solid lightgrey thin;
+    border-left: solid lightgrey thin;
+    border-right: solid lightgrey thin;
 }
 
 /*----------------------------------------------------------------------------                 ------------*/
@@ -104,6 +103,16 @@ div.jMyCarousel ul li img {
     border: 0px;
     text-decoration: none;
     color: #808284;
+}
+
+.sub-menu{
+    width: 155px;
+    position: absolute;
+    left: 517px;
+    font-size: 11px;
+    margin: 0px;
+
+    padding-bottom: 10px;
 }
 
 a.aqui {
@@ -210,4 +219,27 @@ a.aqui {
     background-color: #CCC;
     float: left;
 
+}
+
+#catalogo-bx a.cuadro {
+    color:#000000;
+    text-decoration:none;
+    height:20px;
+    line-height:20px;
+    width:20px;
+    text-align:center;
+    float:left;
+    margin-right:5px;
+}
+#catalogo-bx a.cuadro:hover {
+    color:#008BD0;
+    text-decoration:none;
+}
+#catalogo-bx a.cuadro:visited {
+    color:#000000;
+    text-decoration:none;
+}
+#catalogo-bx a.cuadro:active {
+    color:#000000;
+    text-decoration:none;
 }

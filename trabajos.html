@@ -9,14 +9,14 @@
     <script type="text/javascript">
         jQuery(document).ready(function () {
             jQuery('#mycarousel').jcarousel({
-                wrap: 'last',
-                scroll: 1
+                wrap: 'circular',
+                scroll: 3
             });
         });
     </script>
     <script type="text/javascript">
         $(document).ready(function () { // Script de la Galeria
-            $('#catalogo-bx').find('div').css('position', 'absolute').not(':first').hide();
+            $('#catalogo-bx').find('div:not(.sub-menu)').css('position', 'absolute').not(':first').hide();
             $('#catalogo-bx').find('div:first').addClass('aqui');
             $('#mycarousel').find('a:first').addClass('aqui').css('background-position', '0px 0px').css('color', '#fff');
             $('#mycarousel').find('a').click(function () {
@@ -46,7 +46,6 @@
             $('#catalogo-bx').find('a').click(function () {
                 $('#catalogo-bx').find('div.aqui').fadeOut(400);
                 $('#catalogo-bx').find('div').removeClass('aqui').filter(this.hash).fadeIn(400).addClass('aqui');
-                alert("Click")
                 return false;
             });
         });
@@ -80,7 +79,7 @@
 <div style="width:672px; padding: 0 63px;">
     <ul id="mycarousel" class="jcarousel-skin-tango">
         <li>
-            <a href="#01">
+            <a href="#01-1">
                 <p>
                     <img src="img/trabajos/miniaturas/01.png" width="97" height="66" border="0"/>
                 </p>
@@ -98,7 +97,7 @@
         </li>
 
         <li>
-            <a href="#02">
+            <a href="#02-1">
                 <p>
 
                     <img src="img/trabajos/miniaturas/02.png" width="97" height="66" border="0"/>
@@ -118,7 +117,7 @@
         </li>
 
         <li>
-            <a href="#03">
+            <a href="#03-1">
                 <p>
 
                     <img src="img/trabajos/miniaturas/03.png" width="97" height="66" border="0"/>
@@ -130,7 +129,7 @@
                             	Kimberly-Clark<br>
 								</span>
                                 <span style="font-size:10px;">
-                                Clark  Dise&ntilde;o de fichas
+                                Identidad para proyecto
                             	</span>
                 </p>
             </a>
@@ -138,7 +137,7 @@
         </li>
 
         <li>
-            <a href="#04">
+            <a href="#04-1">
                 <p>
 
                     <img src="img/trabajos/miniaturas/04.png" width="97" height="66" border="0"/>
@@ -150,7 +149,7 @@
                             	Kimberly-Clark<br>
 								</span>
                                 <span style="font-size:10px;">
-                                Clark  Diseño de fichas
+                                Dise&ntilde;o de fichas
                             	</span>
                 </p>
             </a>
@@ -158,7 +157,7 @@
         </li>
 
         <li>
-            <a href="#05">
+            <a href="#05-1">
                 <p>
 
                     <img src="img/trabajos/miniaturas/05.png" width="97" height="66" border="0"/>
@@ -178,7 +177,7 @@
         </li>
 
         <li>
-            <a href="#06">
+            <a href="#06-1">
                 <p>
 
                     <img src="img/trabajos/miniaturas/06.png" width="97" height="66" border="0"/>
@@ -198,7 +197,7 @@
         </li>
 
         <li>
-            <a href="#07">
+            <a href="#07-1">
                 <p>
 
                     <img src="img/trabajos/miniaturas/07.png" width="97" height="66" border="0"/>
@@ -217,7 +216,7 @@
 
         </li>
         <li>
-            <a href="#08">
+            <a href="#08-1">
                 <p>
 
                     <img src="img/trabajos/miniaturas/08.png" width="97" height="66" border="0"/>
@@ -228,7 +227,7 @@
                             	<span style="font-size:11px;">
                             	Argentina Outfitters<br>
 								</span>
-                                <span  style="width: 100%; text-align: center;font-size:10px;">
+                                <span style="width: 100%; text-align: center;font-size:10px;">
                                 Newsletter
                             	</span>
                 </p>
@@ -244,85 +243,390 @@
 <div id="catalogo-bx">
 
 
-    <div id="01">
+<div id="01-1">
 
-        <img class="trabajo" src="img/trabajos/01_web_voyconkc_A.png"/>
+    <img class="trabajo" src="img/trabajos/01_web_voyconkc_A.png"/>
 
-        <p>
-            Dise&ntilde;o de marca e imagen para una aplicaci&oacute;n web de uso interno
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de marca e imagen para una aplicaci&oacute;n web de uso interno.<br>
         </p>
+
+
+        <a href="#01-1" class="cuadro">01</a>
+        <a href="#01-2" class="cuadro">02</a>
+        <a href="#01-3" class="cuadro">03</a>
 
     </div>
 
 
-    <div id="02">
+</div>
 
-        <img class="trabajo" src="img/trabajos/02_catalogo_A.png"/>
+<div id="01-2">
 
-        <p>
-            Dise&ntilde;o de fichas y carpeta para cat&aacute;logo log&iacute;stico
+    <img class="trabajo" src="img/trabajos/01_web_voyconkc_B.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Desarrollo de aplicaci&oacute;n web para la administraci&oacute;n de equipos de venta y publicaci&oacute;n de contenidos espec&iacute;ficos seg&uacute;n tipos de usuarios, con soporte de base de datos y panel de control.<br>
         </p>
+
+
+        <a href="#01-1" class="cuadro">01</a>
+        <a href="#01-2" class="cuadro">02</a>
+        <a href="#01-3" class="cuadro">03</a>
 
     </div>
 
-    <div id="03">
 
-        <img class="trabajo" src="img/trabajos/03_categorystories_A.jpg"/>
+</div>
 
-        <p>
+<div id="01-3">
+
+    <img class="trabajo" src="img/trabajos/01_web_voyconkc_C.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de piezas promocionales para el lanzamiento. Folleto, mouse y mousepad.<br>
+        </p>
+
+
+        <a href="#01-1" class="cuadro">01</a>
+        <a href="#01-2" class="cuadro">02</a>
+        <a href="#01-3" class="cuadro">03</a>
+
+    </div>
+
+
+</div>
+
+
+<div id="02-1">
+
+    <img class="trabajo" src="img/trabajos/02_catalogo_A.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de fichas y carpeta para cat&aacute;logo log&iacute;stico.
+        </p>
+        <a href="#02-1" class="cuadro">01</a>
+        <a href="#02-2" class="cuadro">02</a>
+    </div>
+
+</div>
+<div id="02-2">
+
+    <img class="trabajo" src="img/trabajos/02_catalogo_B.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Identificaci&oacute;n por signos y colores.
+        </p>
+        <a href="#02-1" class="cuadro">01</a>
+        <a href="#02-2" class="cuadro">02</a>
+    </div>
+
+</div>
+
+<div id="03-1">
+
+    <img class="trabajo" src="img/trabajos/03_categorystories_A.jpg"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
             Dise&ntilde;o de marca e identidad para proyecto interno.
         </p>
+        <a href="#03-1" class="cuadro">01</a>
+        <a href="#03-2" class="cuadro">02</a>
+        <a href="#03-3" class="cuadro">03</a>
 
     </div>
 
-    <div id="04">
+</div>
+<div id="03-2">
 
-        <img class="trabajo" src="img/trabajos/04_playbooks_A.png"/>
+    <img class="trabajo" src="img/trabajos/03_categorystories_B.jpg"/>
 
-        <p>
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Desarrollo de car&aacute;tulas e imagen para el proyecto.
+        </p>
+        <a href="#03-1" class="cuadro">01</a>
+        <a href="#03-2" class="cuadro">02</a>
+        <a href="#03-3" class="cuadro">03</a>
+
+    </div>
+
+</div>
+<div id="03-3">
+
+    <img class="trabajo" src="img/trabajos/03_categorystories_C.jpg"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Desarrollo de car&aacute;tulas e imagen para el proyecto.
+        </p>
+        <a href="#03-1" class="cuadro">01</a>
+        <a href="#03-2" class="cuadro">02</a>
+        <a href="#03-3" class="cuadro">03</a>
+
+    </div>
+
+</div>
+
+<div id="04-1">
+
+    <img class="trabajo" src="img/trabajos/04_playbooks_A.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
             Dise&ntilde;o de fichas para cada categor&iacute;a.
         </p>
+        <a href="#04-1" class="cuadro">01</a>
+        <a href="#04-2" class="cuadro">02</a>
+
+    </div>
+</div>
+<div id="04-2">
+
+    <img class="trabajo" src="img/trabajos/04_playbooks_B.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de fichas para cada categor&iacute;a.
+        </p>
+        <a href="#04-1" class="cuadro">01</a>
+        <a href="#04-2" class="cuadro">02</a>
+    </div>
+
+</div>
+
+
+<div id="05-1">
+
+    <img class="trabajo" src="img/trabajos/05_depuntablanco_A.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Naming. Dise&ntilde;o de marca e identidad.
+        </p>
+        <a href="#05-1" class="cuadro">01</a>
+        <a href="#05-2" class="cuadro">02</a>
+        <a href="#05-3" class="cuadro">03</a>
+        <a href="#05-4" class="cuadro">04</a>
+    </div>
+
+</div>
+<div id="05-2">
+
+    <img class="trabajo" src="img/trabajos/05_depuntablanco_B.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o y desarrollo de p&aacute;gina web.
+        </p>
+        <a href="#05-1" class="cuadro">01</a>
+        <a href="#05-2" class="cuadro">02</a>
+        <a href="#05-3" class="cuadro">03</a>
+        <a href="#05-4" class="cuadro">04</a>
+    </div>
+
+</div>
+<div id="05-3">
+
+    <img class="trabajo" src="img/trabajos/05_depuntablanco_C.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o y desarrollo de p&aacute;gina web.
+        </p>
+        <a href="#05-1" class="cuadro">01</a>
+        <a href="#05-2" class="cuadro">02</a>
+        <a href="#05-3" class="cuadro">03</a>
+        <a href="#05-4" class="cuadro">04</a>
+    </div>
+
+</div>
+<div id="05-4">
+
+    <img class="trabajo" src="img/trabajos/05_depuntablanco_D.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o y producci&oacute;n de papeler&iacute;a y etiquetas.
+        </p>
+        <a href="#05-1" class="cuadro">01</a>
+        <a href="#05-2" class="cuadro">02</a>
+        <a href="#05-3" class="cuadro">03</a>
+        <a href="#05-4" class="cuadro">04</a>
+    </div>
+
+</div>
+
+<div id="06-1">
+
+    <img class="trabajo" src="img/trabajos/06_limay_A.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de marca e identidad.
+        </p>
+        <a href="#06-1" class="cuadro">01</a>
+        <a href="#06-2" class="cuadro">02</a>
+        <a href="#06-3" class="cuadro">03</a>
 
     </div>
 
-    <div id="05">
+</div>
+<div id="06-2">
 
-        <img class="trabajo" src="img/trabajos/05_depuntablanco_A.png"/>
+    <img class="trabajo" src="img/trabajos/06_limay_B.png"/>
 
-        <p>
-            Naming. Dise&ntilde;o de marca e identidad
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de presentaci&oacute;n para comunicar el proyecto.
+        </p>
+        <a href="#06-1" class="cuadro">01</a>
+        <a href="#06-2" class="cuadro">02</a>
+        <a href="#06-3" class="cuadro">03</a>
+
+    </div>
+
+</div>
+<div id="06-3">
+
+    <img class="trabajo" src="img/trabajos/06_limay_C.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de presentaci&oacute;n para comunicar el proyecto.
+        </p>
+        <a href="#06-1" class="cuadro">01</a>
+        <a href="#06-2" class="cuadro">02</a>
+        <a href="#06-3" class="cuadro">03</a>
+
+    </div>
+
+</div>
+
+<div id="07-1">
+
+    <img class="trabajo" src="img/trabajos/07_BSO_A.png"/>
+
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de marca e identidad.
+        </p>
+        <a href="#07-1" class="cuadro">01</a>
+        <a href="#07-2" class="cuadro">02</a>
+        <a href="#07-3" class="cuadro">03</a>
+        <a href="#07-4" class="cuadro">04</a>
+        <a href="#07-5" class="cuadro">05</a>
+
+    </div>
+
+
+</div>
+<div id="07-2">
+
+    <img class="trabajo" src="img/trabajos/07_BSO_B.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de sitio web.
+        </p>
+        <a href="#07-1" class="cuadro">01</a>
+        <a href="#07-2" class="cuadro">02</a>
+        <a href="#07-3" class="cuadro">03</a>
+        <a href="#07-4" class="cuadro">04</a>
+        <a href="#07-5" class="cuadro">05</a>
+
+    </div>
+
+</div>
+<div id="07-3">
+
+    <img class="trabajo" src="img/trabajos/07_BSO_C.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de sitio web.
+        </p>
+        <a href="#07-1" class="cuadro">01</a>
+        <a href="#07-2" class="cuadro">02</a>
+        <a href="#07-3" class="cuadro">03</a>
+        <a href="#07-4" class="cuadro">04</a>
+        <a href="#07-5" class="cuadro">05</a>
+
+    </div>
+
+</div>
+<div id="07-4">
+
+    <img class="trabajo" src="img/trabajos/07_BSO_D.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de papeler&iacute;a comercial y brochure institucional.
+        </p>
+        <a href="#07-1" class="cuadro">01</a>
+        <a href="#07-2" class="cuadro">02</a>
+        <a href="#07-3" class="cuadro">03</a>
+        <a href="#07-4" class="cuadro">04</a>
+        <a href="#07-5" class="cuadro">05</a>
+
+    </div>
+
+</div>
+<div id="07-5">
+
+    <img class="trabajo" src="img/trabajos/07_BSO_E.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de brochure institucional.
+        </p>
+        <a href="#07-1" class="cuadro">01</a>
+        <a href="#07-2" class="cuadro">02</a>
+        <a href="#07-3" class="cuadro">03</a>
+        <a href="#07-4" class="cuadro">04</a>
+        <a href="#07-5" class="cuadro">05</a>
+
+    </div>
+</div>
+<div id="08-1">
+
+    <img class="trabajo" src="img/trabajos/08_argentinaout_A.png"/>
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de newsletter digital.
         </p>
 
+        <a href="#08-1" class="cuadro">01</a>
+        <a href="#08-2" class="cuadro">02</a>
+
     </div>
 
-    <div id="06">
 
-        <img class="trabajo" src="img/trabajos/06_limay_A.png"/>
+</div>
+<div id="08-2">
 
-        <p>
-            Dise&ntilde;o de marca e identidad
+    <img class="trabajo" src="img/trabajos/08_argentinaout_B.png"/>
+
+
+    <div class="sub-menu">
+        <p class="trabajo-description">
+            Dise&ntilde;o de newsletter digital.
         </p>
 
-    </div>
-
-    <div id="07">
-
-        <img class="trabajo" src="img/trabajos/07_BSO_A.png"/>
-
-        <p>
-            Dise&ntilde;o de marca e identidad
-        </p>
+        <a href="#08-1" class="cuadro">01</a>
+        <a href="#08-2" class="cuadro">02</a>
 
     </div>
-    <div id="08">
 
-        <img class="trabajo" src="img/trabajos/08_argentinaout_A.png"/>
-
-        <p>
-            Dise&ntilde;o de newslleter digital
-        </p>
-
-    </div>
+</div>
 
 </div>
 
