@@ -1,0 +1,57 @@
+.container{
+
+    display: table-row;
+}
+
+.container-column{
+    display: table-cell;
+    width: 70px;
+    padding-top: 0;
+}
+
+.left-column{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    padding: 0;
+    text-align: right;
+}
+.right-column{
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+    height: 100%;
+}
+
+#links{
+    padding: 20px 0 0;
+    margin: 0;
+}
+
+#links li {
+
+    list-style-type: none;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+
+}
+
+.imagen-scocia {
+    vertical-align: bottom;
+    text-align: left;
+    padding-left: 10px;
+
+}
+
+.texto-socia {
+    width: 20px;
+    padding-left: 10px;
+}
+
+.socias {
+    border: 10px;
+}

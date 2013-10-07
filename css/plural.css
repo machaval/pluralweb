@@ -25,7 +25,7 @@ body {
 }
 
 .description {
-    margin: 5px;
+    margin: 0px;
     text-align: left;
 }
 
@@ -92,6 +92,21 @@ ul#navlist {
     font-weight: 100;
     font-size: 10pt;
     text-align: left;
+
+}
+
+.paragraph{
+    color: #808284;
+
+}
+
+.grey-link {
+    color: #808284;
+    text-decoration: none;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 10pt;
+    text-align: left;
     width: 100%;
 }
 
@@ -127,7 +142,8 @@ ul#navlist {
 #main {
     display: table;
     width: 798px;
-    padding: 20px 0 0;
+    padding: 0;
+    height: 100%;
 
 }
 
@@ -146,6 +162,16 @@ ul#navlist {
     padding: 0;
     margin: 0;
 }
+
+.extras {
+    text-align: left;
+    display: table-cell;
+    width: 145px;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+}
+
 
 h4 {
     color: #00B4BD;
@@ -181,6 +207,7 @@ p {
     display: inline-table;
     padding-right: 30px;
     padding-top: 0;
+    width: 160px;
 }
 
 .thumbnails {
@@ -192,9 +219,8 @@ p {
 }
 
 #legend {
-
     vertical-align: middle;
-    padding-right: 20px;
+
 }
 
 .item {
@@ -215,27 +241,6 @@ p {
     padding-bottom: 10px;
 }
 
-#servicios_text {
-    display: table-cell;
-    text-align: right;
-    padding-left: 20px;
-}
-
-#servicios {
-    display: table-cell;
-    padding: 0;
-    padding-top: 40px;
-    vertical-align: middle;
-    text-align: center;
-}
-
-#servicios_title {
-    padding-bottom: 20px;
-    display: block;
-    padding-left: 30px;
-    text-align: left;
-
-}
 
 .brandcontainer{
     display: table-row;
@@ -264,4 +269,11 @@ p {
     border-bottom: solid lightgrey thin;
     border-left: solid lightgrey thin;
     border-right: solid lightgrey thin;
+}
+
+.banner{
+    border-top: solid #000000 thin;
+    border-bottom: solid #000000 thin;
+    border-left: solid #000000 thin;
+    border-right: solid #000000 thin;
 }
